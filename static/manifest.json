@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Lofi-Box",
+    "version": "1.0.0",
+    "description": "description",
+    "icons": {
+        "1000": "/icon.png"
+    },
+    "side_panel": {
+        "default_path": "side-panel.html"
+    },
+    "action": {
+        "default_title": "Lofi-Box",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "sidePanel"
+    ]
+}
