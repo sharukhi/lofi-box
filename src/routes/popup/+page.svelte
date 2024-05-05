@@ -29,7 +29,6 @@
 
 		playingState = 'playing';
 		loadSong();
-		popup_open.showModal();
 	}
 
 	function playSelectedSong(event) {
@@ -48,12 +47,9 @@
 		playingState = 'paused';
 		song.pause();
 	}
-	function popup() {
-		var myWindow = window.open('popup.html', '', 'width=400,height=500');
-	}
 </script>
 
-<body class="h-[250px] w-[400px]">
+<body>
 	<nav class="fixed inset-x-0 top-0 z-50">
 		<div class="px-4 md:px-6">
 			<div class="flex h-14 items-center">
@@ -98,16 +94,4 @@
 			</div>
 		</div>
 	</div>
-	<dialog id="popup_open" class="modal">
-		<div role="alert" class="alert shadow-lg">
-			<iconify-icon icon="lucide:message-circle-warning" class="text-[35px]" style="color: #383404"
-			></iconify-icon>
-			<div>
-				<h3 class="font-normal">
-					To keep Lofi-Box running after closing the extension, you need to open it as a popup.
-				</h3>
-			</div>
-			<button on:click={popup} class="btn btn-sm">Open</button>
-		</div>
-	</dialog>
 </body>

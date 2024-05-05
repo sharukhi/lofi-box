@@ -1,8 +1,9 @@
-<div align="center">
-<img src="/static/icon.png">
+<div align="left">
+<img src="/static/preview/1.png">
 </div>
-<div align="center">
-<h3>Lofi-Box</h3>
+<div align="left">
+<h2>Lofi-Box</h3>
+<p>Relaxing lo-fi tunes directly within your web browser</p>
 </div>
 
 ---

@@ -1,6 +1,6 @@
 {
 	"name": "lofi-box",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -23,6 +23,7 @@
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^7.0.0",
 		"autoprefixer": "^10.4.16",
+		"daisyui": "^4.10.5",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
@@ -42,6 +43,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"bits-ui": "^0.21.7",
 		"clsx": "^2.1.1",
 		"iconify-icon": "^2.1.0",
 		"tailwind-merge": "^2.3.0",
