@@ -6,8 +6,8 @@
 <p>Relaxing lo-fi tunes directly within your web browser</p>
 </div>
 <div  align="center" >
-<img height="60px"src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/HRs9MPufa1J1h5glNhut.png">
-</div>
+<a href="https://chromewebstore.google.com/detail/lofi-box/fbogegnhfhlbdjjhompihcgcenhdclhj" target="_blank"><img height="60px"src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/HRs9MPufa1J1h5glNhut.png">
+</div></a>
 
 
 ---
