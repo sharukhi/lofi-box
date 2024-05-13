@@ -1,0 +1,52 @@
+{
+	"name": "lofi-box",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"ext": "nodemon --watch src --watch static --exec \"vite build\" -e json,ts,css,html,svelte",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@melt-ui/pp": "^0.3.1",
+		"@melt-ui/svelte": "^0.77.0",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/chrome": "^0.0.267",
+		"@types/eslint": "^8.56.0",
+		"@typescript-eslint/eslint-plugin": "^7.0.0",
+		"@typescript-eslint/parser": "^7.0.0",
+		"autoprefixer": "^10.4.16",
+		"daisyui": "^4.10.5",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.35.1",
+		"nodemon": "^3.1.0",
+		"postcss": "^8.4.32",
+		"postcss-load-config": "^5.0.2",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"prettier-plugin-tailwindcss": "^0.5.9",
+		"svelte": "^4.2.7",
+		"svelte-check": "^3.6.0",
+		"sveltekit-adapter-chrome-extension": "^2.0.1",
+		"tailwindcss": "^3.3.6",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^5.0.3"
+	},
+	"type": "module",
+	"dependencies": {
+		"bits-ui": "^0.21.7",
+		"clsx": "^2.1.1",
+		"iconify-icon": "^2.1.0",
+		"tailwind-merge": "^2.3.0",
+		"tailwind-variants": "^0.2.1"
+	}
+}

@@ -2,24 +2,14 @@
 	//@ts-nocheck
 	import 'iconify-icon';
 
-	const playlist = [
-		{
-			audio: `https://boxradio-edge-02.streamafrica.net/lofi`
-		}
-	];
-
 	let playingState = 'paused';
-	let songPlayingIndex = 0;
-	let song = null;
 
 	function togglePlaying() {
 		playingState === 'paused' ? play() : pause();
 	}
 
-	function loadSong() {
-		song = new Audio(playlist[songPlayingIndex].audio);
-		song.volume = 0.2;
-		song.play();
+	function popup() {
+		var myWindow = window.open('popup.html', '', 'width=400,height=500');
 	}
 
 	function play() {
@@ -28,28 +18,12 @@
 		}
 
 		playingState = 'playing';
-		loadSong();
-		popup_open.showModal();
-	}
-
-	function playSelectedSong(event) {
-		const songIndex = +event.target.dataset.index;
-
-		if (songIndex === songPlayingIndex) {
-			songPlayingIndex = null;
-			return pause();
-		}
-
-		songPlayingIndex = songIndex;
-		play();
+		popup();
 	}
 
 	function pause() {
 		playingState = 'paused';
 		song.pause();
-	}
-	function popup() {
-		var myWindow = window.open('popup.html', '', 'width=400,height=500');
 	}
 </script>
 
@@ -98,16 +72,4 @@
 			</div>
 		</div>
 	</div>
-	<dialog id="popup_open" class="modal">
-		<div role="alert" class="alert shadow-lg">
-			<iconify-icon icon="lucide:message-circle-warning" class="text-[35px]" style="color: #383404"
-			></iconify-icon>
-			<div>
-				<h3 class="font-normal">
-					To keep Lofi-Box running after closing the extension, you need to open it as a popup.
-				</h3>
-			</div>
-			<button on:click={popup} class="btn btn-sm">Open</button>
-		</div>
-	</dialog>
 </body>
