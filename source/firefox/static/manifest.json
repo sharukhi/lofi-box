@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Lofi-Box",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "description": "Relaxing lo-fi tunes directly within your web browser.",
     "icons": {
         "1000": "/icon.png"
