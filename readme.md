@@ -1,10 +1,10 @@
 <div align="center">
-<img height="80px" src="source/readme_assets/icon.png">
+<img height="80px" src="readme_assets/icon.png">
 </div>
 <div align="center">
 <h3>Lofi-Box</h3>
 <p>Relaxing lo-fi tunes directly within your web browser</p>
-<a href="https://chromewebstore.google.com/detail/lofi-box/fbogegnhfhlbdjjhompihcgcenhdclhj"><img height="45px" src="source/readme_assets//chrome_btn.png"></a>  <a href="https://addons.mozilla.org/en-US/firefox/addon/lofi-box/"><img height="45px" src="source/readme_assets/firefox_btn.png"></a>
+<a href="https://chromewebstore.google.com/detail/lofi-box/fbogegnhfhlbdjjhompihcgcenhdclhj"><img height="55px" src="readme_assets//chrome_btn.png"></a>  <a href="https://addons.mozilla.org/en-US/firefox/addon/lofi-box/"><img height="55px" src="readme_assets/firefox_btn.png"></a>
 </div>
 
 ### License
