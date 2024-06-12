@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "author": "Sharukhi",
+    "name": "Lofi-Box",
+    "version": "2.0.0",
+    "description": "Relaxing lo-fi tunes directly within your web browser.",
+    "icons": {
+        "1000": "static/icon.png"
+    },
+    "action": {
+        "default_title": "Lofi-Box",
+        "default_popup": "html/popup.html"
+    },
+    "side_panel": {
+        "default_path": "html/main.html"
+    },
+    "permissions": [
+        "sidePanel"
+    ],
+    "offline_enabled": false,
+    "background": {
+        "service_worker": "scripts/background.js",
+        "type": "module"
+    }
+}

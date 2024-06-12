@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Lofi-Box",
+    "version": "2.0.0",
+    "description": "Relaxing lo-fi tunes directly within your web browser.",
+    "icons": {
+        "1000": "static/icon.png"
+    },
+    "browser_action": {
+        "default_title": "Lofi-Box",
+        "default_popup": "html/popup.html"
+    }
+}
