@@ -1,6 +1,6 @@
 <h1 align="center">
 <sub>
-<img src="assets/readme.svg">
+<img src="assets/svg/readme.svg">
 </sub>
 </h1>
 
