@@ -1,8 +1,6 @@
-<h1 align="center">
-<sub>
-<img src="assets/svg/readme.svg">
-</sub>
-</h1>
+<div align="center">
+<img src="assets//preview.png">
+</div>
 
 Lofi-Box is an extension that brings lo-fi music right into your web browser. Lofi-Box allows you to quickly access and enjoy lo-fi music while browsing the internet.
 
@@ -14,8 +12,8 @@ Lofi-Box is an extension that brings lo-fi music right into your web browser. Lo
 
 ## 💾 Install Lofi-Box
 
-<img style="height: 50px;" src="/assets/png/chrome.png">
-<img style="height: 50px;" src="/assets/png/firefox.png">
+[<img src="https://raw.githubusercontent.com/sharukhi/lofi-box/main/assets/svg/chrome_download_dark.svg" height="53" alt="Download for Chrome">](https://chromewebstore.google.com/detail/lofi-box/fbogegnhfhlbdjjhompihcgcenhdclhj)
+[<img src="https://raw.githubusercontent.com/sharukhi/lofi-box/main/assets/svg/firefox_download_dark.svg" height="53" alt="Download for Firefox">](https://addons.mozilla.org/en-US/firefox/addon/lofi-box/)
 
 ## 📄 License
 
