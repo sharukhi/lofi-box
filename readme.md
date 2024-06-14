@@ -25,12 +25,14 @@ Run the `build.py` file, which will create a `release` directory, and then follo
 
 #### Chrome
 
+- Unzip the archive
 - Go to `chrome://extensions`
 - Enable Developer mode
-- Load unpacked and select `/release/chrome` folder
+- Load unpacked and select the unzipped folder
 
 #### Firefox
 
+- Unzip the archive
 - Go to `about:debugging#/runtime/this-firefox`
 - Select "Load temporary Add-on"
-- Select `manifest.json` in `/release/firefox` folder
+- Select `manifest.json` in the unzipped folder

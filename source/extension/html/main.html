@@ -1,85 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="retro">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../static/font_awesome/css/all.min.css" />
+    <link
+      href="../static/daisyui/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="../static/tailwindcss.4"></script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <div>
       <div class="music" id="music">
-        <div class="music-info">
-          <h4 id="title"></h4>
-          <div class="progress-container" id="progress-container">
-            <div class="progress" id="progress"></div>
-          </div>
-        </div>
-
         <audio
           src="https://boxradio-edge-02.streamafrica.net/lofi"
           id="audio"
         ></audio>
 
-        <div class="navigation">
-          <button id="play" class="play-btn">
+        <div class="navigation h-screen flex items-center justify-center">
+          <button id="play" class="btn btn-circle">
             <i class="fas fa-play"></i>
           </button>
-        </div>
-      </div>
-    </div>
-
-    <button id="settings">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="26px"
-        height="26px"
-        viewBox="0 0 36 36"
-      >
-        <path
-          fill="#ece3ca"
-          d="M18 6a12 12 0 1 0 12 12A12 12 0 0 0 18 6m-2 5.15a2 2 0 1 1 2 2a2 2 0 0 1-2.1-2ZM23 24a1 1 0 0 1-1 1h-7a1 1 0 1 1 0-2h2v-6h-1a1 1 0 0 1 0-2h4v8h2a1 1 0 0 1 1 1"
-          class="clr-i-solid clr-i-solid-path-1"
-        />
-        <path fill="none" d="M0 0h36v36H0z" />
-      </svg>
-    </button>
-
-    <div id="settings-modal" class="modal">
-      <div class="modal-content">
-        <div style="text-align: center">
-          <img src="../static/icon.png" style="height: 70x; width: 70px" />
-          <h3 style="font-size: 23px; margin-top: 3px">Lofi-Box</h3>
-          <div id="version" style="margin-top: -15px"></div>
-          <div class="about_btn_div">
-            <div>
-              <a
-                href="https://github.com/sharukhi/lofi-box"
-                target="_blank"
-                style="margin-bottom: 9px"
-                class="about_btn"
-                ><i class="far fa-star"></i> Give a star
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://github.com/sharukhi/lofi-box/tree/main/source"
-                style="margin-bottom: 9px"
-                class="about_btn"
-                target="_blank"
-                ><i class="fab fa-github"></i> Source code</a
-              >
-            </div>
-            <div>
-              <a
-                href="https://github.com/sharukhi/lofi-box/issues"
-                style="margin-bottom: 9px"
-                class="about_btn"
-                target="_blank"
-                ><i class="fas fa-bug"></i> Report an issue</a
-              >
-            </div>
-            <div>
-              <a href="" class="about_btn" style="width: 50px">Close</a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -96,96 +39,12 @@
   :root {
     font-family: PlayfairDisplay, monospace;
   }
-  h3 {
-    color: #282425;
-    font-family: PlayfairDisplay;
-  }
-  p {
-    color: #4f4a46;
-  }
-  .music {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-  }
-  img {
-    border-radius: 100%;
-    border: #e0e2e6 2px solid;
-  }
+
   body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     background-image: url("../static/bg-img.gif");
-  }
-  #settings {
-    cursor: pointer;
-    border-color: #282425;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    border-radius: 100%;
-    text-align: center;
-    vertical-align: middle;
-  }
-  .play-btn {
-    cursor: pointer;
-    background-color: #ece3ca;
-    color: #282425;
-    font-size: 15px;
-    border-radius: 100%;
-    border: 0cm;
-    height: 50px;
-    width: 50px;
-    align-items: center;
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #ece3ca;
-  }
-
-  .modal-content {
-    background-color: #ece3ca;
-    margin: 15% auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 16px;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .about_btn {
-    font-family: PlayfairDisplay, monospace;
-    font-weight: bold;
-    font-size: 1em;
-    text-decoration: none;
-    color: #4f4a46;
-    display: inline-block;
-    padding: 10px 40px 10px 40px;
-    position: relative;
-    border: 2px solid #4f4a46;
-    border-radius: 13px;
-    width: 140px;
-  }
-  .about_btn_div {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 0;
   }
 </style>
