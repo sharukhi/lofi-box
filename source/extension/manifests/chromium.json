@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "author": "Sharukhi",
     "name": "Lofi-Box",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Relaxing lo-fi tunes directly within your web browser.",
     "icons": {
         "1000": "static/icon.png"
